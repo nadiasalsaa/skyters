@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Feeds from './Pages/Feeds'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#6fcced'
+    }
+  },
+  typography: {
+    fontFamily: `'Poppins', sans-serif`,
+    "fontSize": 12,
+    fontWeightRegular: '400',
+    fontWeightMedium: '500',
+    fontWeightBold: '700',
+    
+  }
+  });
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MuiThemeProvider theme={theme}>
+      <Feeds />
+    </MuiThemeProvider>
+    // <div className="App">
+    //   <Feeds/>
+    // </div>
   );
 }
 
