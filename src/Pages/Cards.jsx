@@ -13,9 +13,6 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import Badge from '@material-ui/core/Badge';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
-import a2 from './asset/image/a2.jpg';
-import a3 from './asset/image/a3.jpg';
-import a4 from './asset/image/a4.jpg';
 import sl2 from './asset/image/sl2.jpg';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import FormControl from '@material-ui/core/FormControl';
@@ -119,16 +116,14 @@ export default function Cards() {
   const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [colors, setColor] = React.useState(null);
+  
   const open = Boolean(anchorEl);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleColors = (event) => {
-    setColor(event.currentTarget);
-  }
+  
 
   const handleClose = () => {
     setAnchorEl(null);
@@ -149,13 +144,13 @@ export default function Cards() {
               subheader={
                 <a className="time">What's on you mind, Paul?</a>
               }
-                // subheader= "What's on you mind, Paul?"
+              
                 />
           </Card>
           <Card className="card">
             <CardHeader
               avatar={
-                <Avatar aria-label="ava" className={classes.avatar} src={a3}>
+                <Avatar aria-label="ava" className={classes.avatar} src="https://pbs.twimg.com/media/E3BMpnlVoAAz8Qr?format=jpg&name=large">
                   
                 </Avatar>
               }
@@ -212,7 +207,7 @@ export default function Cards() {
       <Card className="card">
       <CardHeader
         avatar={
-          <Avatar aria-label="ava" className={classes.avatar} src={a2}>
+          <Avatar aria-label="ava" className={classes.avatar} src="https://pbs.twimg.com/media/EwgTVwuVcAIlg57?format=jpg&name=medium">
             
           </Avatar>
         }
@@ -263,7 +258,6 @@ export default function Cards() {
         <IconButton 
             className={classes.share} 
             aria-label="Share"
-            thumbSwitchedStyle={{ backgroundColor: '#e36387' }}
           >
             <Badge badgeContent={4}>
               <ShareIcon />
@@ -273,7 +267,7 @@ export default function Cards() {
       </CardActions>
       
       <div className="comm">
-          <Avatar aria-label="ava" className="profile" src={a4}></Avatar>
+          <Avatar aria-label="ava" className="profile" src="https://pbs.twimg.com/media/E1wRIqMVoAkbtad?format=jpg&name=large"></Avatar>
           <div className="ccard">
               <p className="coname">
                 Mary Jane Watson 
@@ -312,10 +306,10 @@ export default function Cards() {
 
       </div>
       <div className="comm">
-          <Avatar aria-label="ava" className="profile" src={a3}></Avatar>
+          <Avatar aria-label="ava" className="profile" src="https://pbs.twimg.com/media/ExU43QnVEAEEYC6?format=jpg&name=large"></Avatar>
           <div className="ccard">
               <p className="coname">
-                  Bibi May  
+                  James Lee  
               </p>
               <p className="cpost">Kayanya gampang deh...cek dulu di youtube</p>
               
@@ -351,7 +345,7 @@ export default function Cards() {
 
       </div>
       <div className="comm">
-          <Avatar aria-label="ava" className="profile" src={a4}></Avatar>
+          <Avatar aria-label="ava" className="profile" src="https://pbs.twimg.com/media/E0R9mQxVEAEydz6?format=jpg&name=large"></Avatar>
           <div className="ccard">
               <p className="coname">
                 Miles Morales  
@@ -394,7 +388,7 @@ export default function Cards() {
         <CardHeader className="commen"
           avatar={
             
-            <Avatar aria-label="ava" src={a4}></Avatar>
+            <Avatar aria-label="ava" src="https://pbs.twimg.com/media/EeaVneQU8AAHgaW?format=jpg&name=medium"></Avatar>
           }
           subheader={
             <BootstrapInput placeholder="Tulis komentar kamu.."  id="bootstrap-input" className="ip" />
@@ -408,7 +402,7 @@ export default function Cards() {
       <Card className="card">
             <CardHeader
               avatar={
-                <Avatar aria-label="ava" className={classes.avatar} src={a3}>
+                <Avatar aria-label="ava" className={classes.avatar} src="https://pbs.twimg.com/media/ExTyIQoU8AQGRld?format=jpg&name=large">
                   
                 </Avatar>
               }

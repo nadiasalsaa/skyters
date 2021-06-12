@@ -6,7 +6,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from '@material-ui/core/Avatar';
-import a4 from './asset/image/a4.jpg';
 import logo from './asset/image/shazam.png';
 import './asset/Feeds.css';
 import Cards from './Cards';
@@ -58,7 +57,7 @@ export default function Feeds() {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <Avatar alt="Remy Sharp" src={a4} className="avap"/>
+            <Avatar alt="Remy Sharp" src="https://pbs.twimg.com/media/EeaVneQU8AAHgaW?format=jpg&name=medium" className="avap"/>
 
             
           </div>
