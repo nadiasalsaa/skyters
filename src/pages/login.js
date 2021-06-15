@@ -12,8 +12,8 @@ class Login extends Component {
             <div className="login">
                 <div className="content">
                     <div className="title-app">
-                        <h1 style={{marginRight: 220, fontSize:48, color: '#6fcced'}}>Skyter</h1>
-                        <p style={{width: 300, textAlign: 'start', marginLeft: 200}}>Skyter membantu Anda terhubung dan berbagi dengan orang-orang dalam kehidupan Anda</p>
+                        <h1 className="skyter-title">Skyter</h1>
+                        <p className="skyter-desc">Skyter membantu Anda terhubung dan berbagi dengan orang-orang dalam kehidupan Anda</p>
                     </div>
                     <div className="form-login-box">
                         <form action="" className="form-login">
@@ -21,6 +21,9 @@ class Login extends Component {
                             <input type="password" name="password" id="" placeholder="Kata Sandi" className="input-login input-password" />
                             <input type="submit" value="Login" className="submit-login-btn" />
                         </form>
+                        <p style={{fontSize: 12}}>atau</p>
+                        <button className="btn-facebook">Login Facebook</button><br />
+                        <button className="btn-google">Login Google</button>
                         <hr className="line-form" />
                         <AlertDialogRegister />
                     </div>
