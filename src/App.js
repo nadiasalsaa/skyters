@@ -1,5 +1,7 @@
 import './App.css';
 import Feeds from './Pages/Feeds'
+import MyProfile from './Pages/MyProfile'
+import FProfile from './Pages/FProfile ';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -22,12 +24,16 @@ const theme = createMuiTheme({
 
 function App() {
   return (
+    // <MuiThemeProvider theme={theme}>
+    //   <Feeds />
+    // </MuiThemeProvider>
+    // <MuiThemeProvider theme={theme}>
+    //   <MyProfile />
+    // </MuiThemeProvider>
     <MuiThemeProvider theme={theme}>
-      <Feeds />
+      <FProfile />
     </MuiThemeProvider>
-    // <div className="App">
-    //   <Feeds/>
-    // </div>
+    
   );
 }
 

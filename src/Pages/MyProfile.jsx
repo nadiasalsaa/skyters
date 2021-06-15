@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -8,38 +8,35 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from '@material-ui/core/Avatar';
 import logo from './asset/image/shazam.png';
 import './asset/Feeds.css';
-import Cards from './Cards';
-
+import MyHome from './MyHome';
 
 const useStyles = makeStyles((theme) => ({
-  grow: {
-    flexGrow: 0.5,
-  },
-
-
-  // sectionMobile: {
-  //   display: 'none',
-  //   [theme.breakpoints.up('md')]: {
-  //     display: 'flex',
-      
-  //   },
-  // },
-
-    root: {
-        display: 'flex',
-        '& > *': {
-        margin: theme.spacing(1),
-        },
-    }
-    
-}));
-
-export default function Feeds() {
-  const classes = useStyles();
+    grow: {
+      flexGrow: 0.5,
+    },
   
+  
+    // sectionMobile: {
+    //   display: 'none',
+    //   [theme.breakpoints.up('md')]: {
+    //     display: 'flex',
+        
+    //   },
+    // },
+  
+      root: {
+          display: 'flex',
+          '& > *': {
+          margin: theme.spacing(1),
+          },
+      }
+      
+  }));
 
-  return (
-    <div className={classes.grow}>
+export default function MyProfile() {
+    const classes = useStyles();
+    return (
+        <div className={classes.grow}>
       <AppBar position="static" background-color="#6fcced" className="hd">
         <Toolbar>
             
@@ -66,8 +63,9 @@ export default function Feeds() {
         </Toolbar>
         
       </AppBar>
-      <Cards/>
+      <MyHome />
+      
         
     </div>
-  );
+    )
 }

@@ -74,6 +74,9 @@
         
     }
 }
+.ban{
+    display: flex;
+}
 .card{
     margin-top: 10px;
     margin-left: 441px;
@@ -82,6 +85,125 @@
     border: 1.5px solid rgba(241, 242, 246, 1);
     
 }
+ .mypro{
+    margin-top: 20px;
+    width: 622px;
+    margin-left: 441px;
+    display: inline-block;
+    .myprofile{
+        height: 150px;
+        width: 150px;
+        margin-left: 300px;
+        margin-bottom: 24px;
+        margin-top: 28px;
+    }
+    .myname{
+        position: absolute;
+        width: 181px;
+        height: 19px;
+        margin-left: 460px;
+        top: 98px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #203758;
+
+    }
+    .btn-profile{
+        position: absolute;
+        width: 105px;
+        height: 31px;
+        left: 790px;
+        top: 98px;
+        background: #e36387;
+        border-radius: 6px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+        color: #203758;
+    }
+    .exit{
+        width: 24px;
+        height: 24px;
+        left: 869px;
+        
+    }
+
+    .posts{
+        position: absolute;
+        width: 74px;
+        height: 18px;
+        left: 620px;
+        top: 141px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #203758;
+        .fthin{
+            margin-left: 3px;
+            font-weight: 500;
+        }
+    }
+
+    .followers{
+        position: absolute;
+        width: 74px;
+        height: 18px;
+        left: 710px;
+        top: 141px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #203758;
+        .fthin{
+            margin-left: 3px;
+            font-weight: 500;
+        }
+    }
+
+    .following{
+        position: absolute;
+        width: 74px;
+        height: 18px;
+        left: 820px;
+        top: 141px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #203758;
+        margin-right: 25px;
+        .fthin{
+            margin-left: 3px;
+            font-weight: 500;
+        }
+    }
+
+    
+    .bio{
+        position: absolute;
+        width: 443px;
+        height: 77px;
+        left: 620px;
+        top: 170px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 187.4%;
+        color: #203758;
+    }
+ }
 
 .post{
     text-align: center;
@@ -132,9 +254,15 @@
         width: 100px;
     }
 
+    .ban{
+        margin-left: 190px;
+    }
     
 
-    
+    .mypro{
+        width: 100%;
+        margin: 0px;
+    }
 
     .media{
         width: 90%;
